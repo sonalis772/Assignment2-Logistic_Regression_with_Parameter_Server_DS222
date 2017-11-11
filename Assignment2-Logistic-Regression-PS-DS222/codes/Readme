@@ -1,0 +1,40 @@
+1.For part1 go inside PArt1_local_logistic
+
+1.run python 1.dataprep.py  ########data preparation
+2.run python 2.mainlog.py3.  ######constant lr
+3.run python 3.mainlog_decay.py #######decreasing lr
+4.run python 3.mainlog_inc.py  ########increasing lr
+
+1.For part2 go inside Part2_distributed_logistic
+
+#######change cluster specifications depending on machine you are running. I have used 2 Parameter servers and 2 worker nodes.
+parameter_servers = ["10.24.1.210:2225",
+		    "10.24.1.211:2225"]
+workers = [ "10.24.1.213:2225", 
+      "10.24.1.214:2225"]
+cluster = tf.train.ClusterSpec({"ps":parameter_servers, "worker":workers})
+
+
+1.run on 4 different worker nodes for asynchronous sgd.
+
+pc-01$ python asynchronous2.py --job_name="ps" --task_index=0 
+pc-02$ python asynchronous2.py --job_name="ps" --task_index=1  
+pc-03$ python asynchronous2.py --job_name="worker" --task_index=0 
+pc-04$ python asynchronous2.py --job_name="worker" --task_index=1
+
+
+2.run on 4 different worker nodes for bulk synchronous sgd.
+
+pc-01$ python synchronous2.py --job_name="ps" --task_index=0 
+pc-02$ python synchronous2.py --job_name="ps" --task_index=1
+pc-03$ python synchronous2.py --job_name="worker" --task_index=0 
+pc-04$ python synchronous2.py --job_name="worker" --task_index=1
+
+3.run on 4 different worker nodes for stale synchronous sgd.
+
+pc-01$ python stale_synchronous2.py --job_name="ps" --task_index=0 
+pc-02$ python stale_synchronous2.py --job_name="ps" --task_index=1
+pc-03$ python stale_synchronous2.py --job_name="worker" --task_index=0 
+pc-04$ python stale_synchronous2.py --job_name="worker" --task_index=1 
+
+change staleness to different values and check

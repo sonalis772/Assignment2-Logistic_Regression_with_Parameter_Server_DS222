@@ -1,0 +1,220 @@
+(myenv)sonalis772@node9:~/project/assignments/assignment2$ python stale_synchronous2.py --job_name="worker" --task_index=1
+2017-11-11 04:56:19.534802: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-11-11 04:56:19.534856: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-11-11 04:56:19.534875: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2017-11-11 04:56:19.534894: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+D1111 04:56:19.535729505   22101 env_linux.c:77]             Warning: insecure environment read function 'getenv' used
+2017-11-11 04:56:19.553313: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:215] Initialize GrpcChannelCache for job ps -> {0 -> 10.24.1.205:2221, 1 -> 10.24.1.206:2221}
+2017-11-11 04:56:19.553368: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:215] Initialize GrpcChannelCache for job worker -> {0 -> 10.24.1.207:2221, 1 -> localhost:2221}
+2017-11-11 04:56:19.554380: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:316] Started server with target: grpc://localhost:2221
+data_loaded
+Variables initialized ...
+2017-11-11 05:07:05.733124: I tensorflow/core/distributed_runtime/master_session.cc:999] Start master session e3f2462392e73ab7 with config: 
+
+Epoch: 0001 cost= 2068.943769347
+3.6470313698
+Epoch: 0002 cost= 1483.356611144
+5.32719938661
+Epoch: 0003 cost= 1075.142325923
+7.49741640831
+Epoch: 0004 cost= 792.272792600
+10.5210521052
+Epoch: 0005 cost= 579.387756348
+14.1914191419
+Epoch: 0006 cost= 423.086919245
+18.5451878521
+Epoch: 0007 cost= 308.402715143
+23.7923792379
+Epoch: 0008 cost= 224.313013617
+29.5896256292
+Epoch: 0009 cost= 162.850899175
+35.2568590192
+Epoch: 0010 cost= 117.583856979
+40.937427076
+Epoch: 0011 cost= 84.809298821
+46.3246324632
+Epoch: 0012 cost= 61.211467023
+51.3451345135
+Epoch: 0013 cost= 44.318272789
+55.4088742208
+Epoch: 0014 cost= 32.182283114
+59.3059305931
+Epoch: 0015 cost= 23.435221978
+62.1062106211
+Epoch: 0016 cost= 17.190125375
+64.4397773111
+Epoch: 0017 cost= 12.749949005
+66.1499483282
+Epoch: 0018 cost= 9.603506340
+67.4167416742
+Epoch: 0019 cost= 7.384276822
+68.3535020169
+Epoch: 0020 cost= 5.826128294
+69.0469046905
+Epoch: 0021 cost= 4.737377720
+69.496949695
+Epoch: 0022 cost= 3.980413833
+69.8136480315
+Epoch: 0023 cost= 3.455020558
+69.9536620329
+Epoch: 0024 cost= 3.096043137
+70.2136880355
+Epoch: 0025 cost= 2.849976441
+70.3403673701
+Epoch: 0026 cost= 2.683184777
+70.5270527053
+Epoch: 0027 cost= 2.569417785
+70.6437310398
+Epoch: 0028 cost= 2.493677468
+70.6804013735
+Epoch: 0029 cost= 2.443072881
+70.7404073741
+Epoch: 0030 cost= 2.409091686
+70.7437410408
+Epoch: 0031 cost= 2.386499369
+70.6870687069
+Epoch: 0032 cost= 2.371503918
+70.8370837084
+Epoch: 0033 cost= 2.361542229
+70.8837550422
+Epoch: 0034 cost= 2.355291076
+70.7937460413
+Epoch: 0035 cost= 2.352161583
+70.8470847085
+Epoch: 0036 cost= 2.349084472
+70.8604193753
+Epoch: 0037 cost= 2.346981955
+70.8670867087
+Epoch: 0038 cost= 2.345488076
+70.8837550422
+Epoch: 0039 cost= 2.344397954
+70.9104243758
+Epoch: 0040 cost= 2.343584139
+70.9104243758
+Epoch: 0041 cost= 2.342959215
+70.9237590426
+Epoch: 0042 cost= 2.342458599
+70.930426376
+Epoch: 0043 cost= 2.342072723
+70.9370937094
+Epoch: 0044 cost= 2.340603439
+71.0504383772
+Epoch: 0045 cost= 2.339780506
+71.0437710438
+Epoch: 0046 cost= 2.339568377
+71.063773044
+Epoch: 0047 cost= 2.339320864
+71.0937760443
+Epoch: 0048 cost= 2.339132489
+71.0837750442
+Epoch: 0049 cost= 2.339044906
+71.0771077108
+Epoch: 0050 cost= 2.338984582
+71.0804413775
+Epoch: 0051 cost= 2.338924946
+71.0571057106
+Epoch: 0052 cost= 2.338877080
+71.0471047105
+Epoch: 0053 cost= 2.339248309
+70.8937560423
+Epoch: 0054 cost= 2.340562314
+70.9070907091
+Epoch: 0055 cost= 2.340026590
+71.0471047105
+Epoch: 0056 cost= 2.338820428
+71.0337700437
+Epoch: 0057 cost= 2.338862860
+71.0437710438
+Epoch: 0058 cost= 2.338880476
+71.0537720439
+Epoch: 0059 cost= 2.338965443
+70.9604293763
+Epoch: 0060 cost= 2.340408325
+70.9104243758
+Epoch: 0061 cost= 2.340630590
+70.9070907091
+Epoch: 0062 cost= 2.340700545
+70.9170917092
+Epoch: 0063 cost= 2.340758409
+70.9137580425
+Epoch: 0064 cost= 2.340430694
+70.9137580425
+Epoch: 0065 cost= 2.340878817
+70.930426376
+Epoch: 0066 cost= 2.340915705
+70.9137580425
+Epoch: 0067 cost= 2.341258706
+70.8937560423
+Epoch: 0068 cost= 2.342624392
+70.897089709
+Epoch: 0069 cost= 2.342322010
+70.963763043
+Epoch: 0070 cost= 2.341285865
+70.9837650432
+Epoch: 0071 cost= 2.341482324
+70.9537620429
+Epoch: 0072 cost= 2.342841522
+70.9370937094
+Epoch: 0073 cost= 2.342932654
+70.930426376
+Epoch: 0074 cost= 2.343020079
+70.9404273761
+Epoch: 0075 cost= 2.342000577
+71.0004333767
+Epoch: 0076 cost= 2.341814462
+71.0104343768
+Epoch: 0077 cost= 2.341973406
+70.9837650432
+Epoch: 0078 cost= 2.343297189
+70.9670967097
+Epoch: 0079 cost= 2.343544868
+70.963763043
+Epoch: 0080 cost= 2.343623004
+70.9704303764
+Epoch: 0081 cost= 2.343772951
+70.9804313765
+Epoch: 0082 cost= 2.343834571
+71.0071007101
+Epoch: 0083 cost= 2.342713516
+71.0537720439
+Epoch: 0084 cost= 2.342511757
+71.0671067107
+Epoch: 0085 cost= 2.342574797
+71.0704403774
+Epoch: 0086 cost= 2.342734814
+71.0737740441
+Epoch: 0087 cost= 2.342891495
+71.0771077108
+Epoch: 0088 cost= 2.343050586
+71.0771077108
+Epoch: 0089 cost= 2.343009575
+71.1071107111
+Epoch: 0090 cost= 2.343501233
+71.0271027103
+Epoch: 0091 cost= 2.344445750
+71.0204353769
+Epoch: 0092 cost= 2.344916584
+71.0271027103
+Epoch: 0093 cost= 2.345051727
+71.030436377
+Epoch: 0094 cost= 2.345266846
+71.0337700437
+Epoch: 0095 cost= 2.345309777
+71.030436377
+Epoch: 0096 cost= 2.345661296
+70.963763043
+Epoch: 0097 cost= 2.346826108
+70.9604293763
+Epoch: 0098 cost= 2.346801508
+70.9670967097
+Epoch: 0099 cost= 2.346896763
+70.9737640431
+Epoch: 0100 cost= 2.347066510
+70.9737640431
+Optimization Finished!
+Total Time: 1893.71s
+train_accuracy= 75.4294245966
+test_accuracy= 69.4102743608
+test time: 0.94s
+done
+

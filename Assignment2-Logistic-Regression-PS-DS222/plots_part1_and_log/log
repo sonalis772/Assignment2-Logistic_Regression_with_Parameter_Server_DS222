@@ -1,0 +1,20 @@
+1. weight decay
+2.19121e-05
+Optimization Finished!
+Total Time: 2337.40s
+train_accuracy= 75.4773322418
+test_accuracy= 73.2073207321
+
+2.weight_inc
+Optimization Finished!
+Total Time: 2078.15s
+train_accuracy= 61.5185328167
+test_accuracy= 48.1348134813
+
+3.weight_constant
+71.2704603794
+Optimization Finished!
+Total Time: 2323.79s
+train_accuracy= 75.3647725317
+test_accuracy= 71.2704603794
+(myenv)sonalis772@turing:~/project/assignments/assignment2$
